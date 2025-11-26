@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>Cadastro PetLar</title>
+</head>
+    <header class="navbar">
+        <h1 class="logo">PetLar</h1>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="inicio.html">Sobre Nós</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<body>
+
+    <img src="cadastrodog.svg   " alt="cadastrodog">
+
+<div class="login-container">
+        <div class="login-card">
+            <div class="login-header">
+                <h2>Cadastre-se</h2>
+                <p>Vamos criar suas credenciais para continuar</p>
+            </div>
+            
+            <form class="login-form" id="loginForm" novalidate>
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="nome" id="nome" name="nome" required autocomplete="nome">
+                        <label for="nome">Nome</label>
+                    </div>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="email" id="email" name="email" required autocomplete="email">
+                        <label for="email">Email</label>
+                    </div>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="password" id="password" name="password" required autocomplete="current-password">
+                        <label for="password">Senha</label>
+                    </div>
+                    <span class="error-message" id="passwordError"></span>
+                </div>
+
+                <div class="form-group">
+                    <div class="input-wrapper">
+                        <input type="telefone" id="telefone" name="telefone" required autocomplete="telefone">
+                        <label for="telefone">Telefone</label>
+                    </div>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+
+                <button type="submit" class="login-btn">
+                    <span class="btn-text">Criar Conta</span>
+                    <span class="btn-loader"></span>
+                </button>
+            </form>
+
+            <div class="success-message" id="successMessage">
+                <div class="success-icon">✓</div>
+                <h3>Bem Vindo!</h3>
+                <p>Voltando para o Menu...</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="../../shared/js/form-utils.js"></script>
+    <script src="cadastro.js"></script>
+</body>
+</html>
